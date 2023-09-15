@@ -8,6 +8,7 @@ function testGS() {
 
 function addGS() {
     try{
+        console.log("Inside addGS")
     fetch(url, {
         method: "POST", // *GET, POST, PUT, DELETE, etc.
         mode: "no-cors", // no-cors, *cors, same-origin
