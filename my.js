@@ -1,4 +1,4 @@
-const url = "https://script.google.com/macros/s/AKfycbz3JPYpMOpLuEClHNINDD_ObbfvIfJHUet_60VLPF0nRpkZd2OeG2CRqnkPz-E3meirPg/exec"
+const url = "https://script.google.com/macros/s/AKfycbznQRd-nEVIBRYSwbUxxK9EALroR8rIioBgqsk9vCcdgfW1ZZjzHgVqUfKOcnFcdKVJEA/exec"
 function testGS() {
     
     fetch(url,).then(d => d.json()).then(d => {
@@ -19,7 +19,7 @@ function addGS() {
         },
         redirect: "follow", // manual, *follow, error
         //referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-        body: JSON.stringify({name:"John"}), // body data type must match "Content-Type" header
+        body: JSON.stringify({gender:"Female",class:"4. Senior",state:"Kerala",major:"English",extracurricular:"Drama Club",student:"Radhika"}), // body data type must match "Content-Type" header
       });
 }
 
