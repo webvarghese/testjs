@@ -1,4 +1,4 @@
-const url = "https://script.google.com/macros/s/AKfycbznQRd-nEVIBRYSwbUxxK9EALroR8rIioBgqsk9vCcdgfW1ZZjzHgVqUfKOcnFcdKVJEA/exec"
+const url = "https://script.google.com/macros/s/AKfycbyZjcWS9C0aenq8gujErTlZDNB-fmOfTuN21rv86XhrQTUEw4BzFGfOHqClDKxtVs9faQ/exec"
 function testGS() {
     
     fetch(url,).then(d => d.json()).then(d => {
