@@ -7,7 +7,7 @@ function testGS() {
 }
 
 function addGS() {
-    
+    try{
     fetch(url, {
         method: "POST", // *GET, POST, PUT, DELETE, etc.
         mode: "no-cors", // no-cors, *cors, same-origin
@@ -21,6 +21,9 @@ function addGS() {
         //referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
         body: JSON.stringify({gender:"Female",class:"4. Senior",state:"Kerala",major:"English",extracurricular:"Drama Club",student:"Radhika"}), // body data type must match "Content-Type" header
       });
+    } catch(err){
+        console.log(err)
+    }
 }
 
 document.getElementById("btn").addEventListener("click",testGS)
